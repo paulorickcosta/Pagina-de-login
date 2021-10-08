@@ -1,0 +1,182 @@
+body {
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    padding: auto;
+    font-family: Roboto, sans-serif;
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+:root {
+    --blue: #4E5BEE;
+    --cinza:#F8F8F8;
+    --vermelho:#FF5757;
+}
+
+.telaDeLogin {
+    background: var(--blue);
+    flex: 0 0 auto;
+    width: 44%;
+    height: 47.8rem;
+    left: 0;
+}
+
+.imageLogo {
+    width: 60%;
+    overflow: hidden;
+}
+
+.imageLogo img {
+    transform: translate(-25%,1%);
+
+}
+
+.telaDeLogin>form {
+    background: var(--blue);
+    height: 100%;
+}
+
+.telaDeLogin>form>img {
+    width: 11rem;
+    margin-top: 13rem;
+    margin-bottom: 6rem;
+}
+
+.login {
+    flex: 0 auto;
+    background: var(--blue);
+    text-decoration: none;
+    border: solid;
+    border-radius: 50px;
+    border-color: var(--cinza);
+    color: white;
+    display: flex;
+    top: 0;
+    bottom: 0;
+    margin: 0px 25% 0px 25%;
+    padding: 10px;
+    margin-bottom: 2rem;
+}
+
+.login>input {
+    font-size: 1rem;
+    margin-left: 0.5rem;
+    border-radius: 50px;
+    background: var(--blue);
+    text-decoration: none;
+    padding-top: 8px;
+    width: 100%;
+    color: var(--cinza);
+
+    box-shadow: 0 0 0 0;
+    border: none;
+    outline: 0;
+}
+
+.login>img {
+    margin-left: 10px;
+}
+.senha {
+    flex:  0 auto;
+    background: var(--blue);
+    text-decoration: none;
+    border: solid;
+    border-radius: 50px;
+    border-color: var(--cinza);
+    display: flex;
+    top: 0;
+    bottom: 0;
+    margin: 0px 25% 0px 25%;
+    padding: 10px;
+    margin-bottom: 1.3rem;
+}
+
+.senha>input {
+    font-size: 1rem;
+    margin-left: 0.5rem;
+    border-radius: 50px;
+    background: transparent;
+    border-color: transparent;
+    padding: 8px;
+    width: 100%;
+    color: var(--cinza);
+
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+}
+
+.senha>img {
+    margin-left: 10px;
+}
+
+.telaDeLogin>form>button {
+    border: solid;
+    border-radius: 50px;
+    display: flex;
+    margin: 0px 30% 0px 25%;
+    padding: 10px;
+    cursor: pointer;
+    width: 50%;
+    justify-content: center;
+    font-family: Roboto, sans-serif;
+    font-size: 1.2rem;
+    background: var(--cinza);
+    background-color: var(--cinza);
+}
+
+.EsqueciSenha {
+    margin-top: 100px;
+    font-size: 0.8rem;
+    font-family: Roboto ,sans-serif;
+}
+
+.EsqueciSenha>a {
+    text-decoration: none;
+    color: var(--cinza);
+}
+
+#mensagemErro {
+    font-size: Roboto, sans-serif;
+    font-size: 0.79rem;
+    margin-right: 15%;
+    margin-top: -19px;
+    margin-bottom: -1px;
+    color: var(--cinza);
+}
+
+@media(max-width: 700px){
+    body{
+        background: var(--blue);
+    }
+    .imageLogo {
+        display: none;
+        }
+        .telaDeLogin {
+        width: 100%;
+    }
+    #mensagemErro {
+        margin-right: 19%;
+    }
+    .login {
+        margin: 0px 10% 30px 10%;
+    }
+    .senha {
+        margin: 0px 10% 0px 10%;
+    }
+    .telaDeLogin>form>button {
+        margin: 10px 0px 0px 10%;
+        padding-top:10px;
+        width: 80%;
+    }
+}
+
+@media(max-width:150px){
+    .telaDeLogin>form>img{
+        width: 8rem;
+    }
+}
